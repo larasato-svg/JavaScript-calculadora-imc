@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de IMC</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+
+    <h1>
+        Calculadora de IMC
+    </h1>
+
+    <p>
+        Cadastre uma pessoa e calcule seu
+        Índice de Massa Corporal.
+    </p>
+
+</header>
+
+
+
+<section>
+
+    <h2>
+        Cadastro
+    </h2>
+
+    <label>
+        Nome
+    </label>
+
+    <input
+        type="text"
+        id="nome"
+    >
+
+    <label>
+        Peso
+    </label>
+
+    <input
+        type="number"
+        id="peso"
+    >
+
+    <label>
+        Altura
+    </label>
+
+    <input
+        type="number"
+        id="altura"
+    >
+
+    <button id="btnCalcular">
+        Calcular IMC
+    </button>
+
+</section>
+
+
+
+
+<div id="resultado">
+
+    <span>
+        O resultado aparecerá aqui.
+    </span>
+
+</div>
+
+
+
+
+<section>
+
+    <h2>
+        Pessoas cadastradas
+    </h2>
+
+    <div id="listaPessoas">
+
+        <p>
+            Nenhuma pessoa cadastrada ainda.
+        </p>
+
+    </div>
+
+</section>
+
+<script src="script.js">
+</script>
+  
+</body>
+</html>

@@ -1,0 +1,167 @@
+
+/* RESET */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+   
+}
+
+/* CONFIGURAÇÕES GERAIS */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #eff6ff, #f4f6f8);
+    color: #1f2937;
+    min-height: 100vh;
+    padding: 40px 20px;
+    line-height: 1.6;
+    
+}
+
+/* TÍTULO PRINCIPAL */
+h1 {
+    color: #1d4ed8;
+    font-size: 2.3rem;
+    margin-bottom: 10px;
+}
+
+/* TEXTO DE INTRODUÇÃO */
+body > p {
+    color: #64748b;
+    margin-bottom: 30px;
+}
+
+/* TÍTULOS DAS SEÇÕES */
+h2 {
+    color: #1e3a8a;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+/* CARTÕES */
+.card {
+    background-color: #ffffff;
+    padding: 28px;
+    border-radius: 16px;
+    margin-bottom: 25px;
+    box-shadow: 0 8px 25px rgba(15, 23, 42, 0.07);
+    border: 1px solid #e2e8f0;
+}
+
+/* FORMULÁRIO */
+form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+    gap: 18px;
+}
+
+/* CAMPOS */
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    flex: 1;
+    min-width: 180px;
+}
+
+/* RÓTULOS */
+.campo label {
+    font-weight: bold;
+    font-size: 14px;
+    color: #374151;
+}
+
+/* INPUTS */
+.campo input {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 9px;
+    font-size: 16px;
+    color: #1f2937;
+    background-color: #f8fafc;
+    outline: none;
+    transition: 0.3s;
+}
+
+/* EFEITO AO SELECIONAR UM CAMPO */
+.campo input:focus {
+    border-color: #2563eb;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+/* BOTÕES */
+button {
+    padding: 12px 22px;
+    border: none;
+    border-radius: 9px;
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* EFEITO DO BOTÃO */
+button:hover {
+    background: linear-gradient(135deg, #1d4ed8, #1e40af);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 14px rgba(37, 99, 235, 0.25);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* RESULTADO DO IMC */
+#resultado {
+    margin-top: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #eff6ff;
+    color: #1d4ed8;
+    font-weight: bold;
+}
+
+/* LISTA DE PESSOAS CADASTRADAS */
+#lista-pessoas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+}
+
+/* MENSAGEM QUANDO NÃO HÁ CADASTROS */
+#lista-pessoas p {
+    color: #64748b;
+}
+
+/* RESPONSIVIDADE PARA CELULARES */
+@media (max-width: 600px) {
+    body {
+        padding: 22px 14px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .campo {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+    }
+}
